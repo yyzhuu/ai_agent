@@ -16,7 +16,7 @@ class ModelConfig:
         default_factory=lambda: os.getenv("MODEL_PROVIDER", "openai").lower()
     )
     openai_model_name: str = field(
-        default_factory=lambda: os.getenv("OPENAI_MODEL_NAME", "gpt-4o-mini")
+        default_factory=lambda: os.getenv("OPENAI_MODEL_NAME", "gpt-5.2")
     )
     temperature: float = field(
         default_factory=lambda: float(os.getenv("MODEL_TEMPERATURE", "0.0"))
